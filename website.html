@@ -7,7 +7,7 @@
         padding: 20px 0 20px 0;
         margin: 0 0 0 0;
     } ul {
-      background: rgba(0,0,0,0.2);
+      background: rgb(182, 182, 182);
       margin: 0% auto;
       background-size: cover;
       text-align: center;
@@ -16,11 +16,16 @@
       display: inline;
       padding: 0px 40px 0px 40px;
       text-align: center;
-    } a:link,a:hover,a:visited,a:active {
+    } a:link,a:visited,a:active,button {
+        background: rgb(182, 182, 182);
         color: rgb(238, 247, 255);
         text-decoration: none;
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
+        border-color:rgb(182, 182, 182);
+    }
+    a:hover {
+        background: rgba(82, 82, 82, 0.2);
     }
     h1 {
         color: rgba(140, 175, 172, 0.795);
@@ -37,6 +42,9 @@
     } #middle {
         border-left: rgb(224, 224, 224);
         border-right: rgb(224, 224, 224);
+    } #text {
+        font-size: 20px;
+        color: rgba(78, 97, 95, 0.795);
     }
 </style>
 <head>
@@ -47,22 +55,35 @@
     <title>Louis Fermaintt | Website</title>
     <meta charset="UTF-8">
 </head>
-<body style="margin: 0% auto;">
+<body style="margin: 0% auto; border-color: rgb(224, 224, 224); border-width: 3px;">
     <div id="top">
         <header>
-            <h1><em>Louis' Website :)</em></h1>
+            <h1>Hello, <em>I am Louis</em></h1>
         </header>
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Going Forward</a></li>
+            <li><a href="#"><button>About Me</button></a></li>
+            <li><a href="#"><button>Achievements</button></a></li>
+            <li><a href="#"><button>Going Forward</button></a></li>
         </ul>
     </div>
-    <div id="middle">
+    <div id="middle" style="text-align: center">
+        <p id="text">Hi, my name is Louis and I am a student at Tappan Zee High School.
+            <br/> This is me --->
 
+        </p>
     </div>
     <div id="footer">
         <p>&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        var different_greetings = ["Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Namaste"];
+        var greet = document.createElement("h1");
+        greet.innerHTML = different_greetings[getRandomInt(15)];
+        document.body.appendChild(greet);
 
+
+    </script>
 </body>
