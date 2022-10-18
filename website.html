@@ -31,6 +31,7 @@
         color: rgba(140, 175, 172, 0.795);
         text-align: center;
         padding: 0px 0 25px 0;
+        font-family: 'Cabin', sans-serif;
     }
     #footer {
         text-align: center;
@@ -38,7 +39,6 @@
         font-family: 'Cabin', sans-serif;
         font-size: 40px;
         margin: 0% auto;
-        height: 150px;
     } #middle {
         border-left: rgb(224, 224, 224);
         border-right: rgb(224, 224, 224);
@@ -57,9 +57,6 @@
 </head>
 <body style="margin: 0% auto; border-color: rgb(224, 224, 224); border-width: 3px;">
     <div id="top">
-        <header>
-            <h1>Hello, <em>I am Louis</em></h1>
-        </header>
         <ul>
             <li><a href="#"><button>About Me</button></a></li>
             <li><a href="#"><button>Achievements</button></a></li>
@@ -68,8 +65,6 @@
     </div>
     <div id="middle" style="text-align: center">
         <p id="text">Hi, my name is Louis and I am a student at Tappan Zee High School.
-            <br/> This is me --->
-
         </p>
     </div>
     <div id="footer">
@@ -80,10 +75,10 @@
             return Math.floor(Math.random() * max);
         }
         var different_greetings = ["Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Namaste"];
+        var text = document.getElementById("top");
         var greet = document.createElement("h1");
-        greet.innerHTML = different_greetings[getRandomInt(15)];
-        document.body.appendChild(greet);
-
+        greet.innerHTML = "<h1 style='height: 5px; color: rgb(" + getRandomInt(255) + "," + getRandomInt(255) + "," + getRandomInt(255) + ")'> " + different_greetings[getRandomInt(14)] + "<em>, I am Louis </em></h1>";
+        (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
 
     </script>
 </body>
