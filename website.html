@@ -16,16 +16,19 @@
       display: inline;
       padding: 0px 40px 0px 40px;
       text-align: center;
-    } a:link,a:visited,a:active,button {
+    } a:link,a:visited,a:active {
         background: rgb(182, 182, 182);
         color: rgb(238, 247, 255);
         text-decoration: none;
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
-        border-color:rgb(182, 182, 182);
+        border-color:rgb(48, 48, 48);
+        border-radius: 4px;
+        padding: 5px;
     }
-    a:hover {
+    a:hover{
         background: rgba(82, 82, 82, 0.2);
+        cursor: pointer;
     }
     h1 {
         color: rgba(140, 175, 172, 0.795);
@@ -43,7 +46,7 @@
         border-left: rgb(224, 224, 224);
         border-right: rgb(224, 224, 224);
     } #text {
-        font-size: 20px;
+        font-size: 25px;
         color: rgba(78, 97, 95, 0.795);
     }
 </style>
@@ -58,13 +61,14 @@
 <body style="margin: 0% auto; border-color: rgb(224, 224, 224); border-width: 3px;">
     <div id="top">
         <ul>
-            <li><a href="#"><button>About Me</button></a></li>
-            <li><a href="#"><button>Achievements</button></a></li>
-            <li><a href="#"><button>Going Forward</button></a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Going Forward</a></li>
         </ul>
     </div>
     <div id="middle" style="text-align: center">
         <p id="text">Hi, my name is Louis and I am a student at Tappan Zee High School.
+
         </p>
     </div>
     <div id="footer">
@@ -77,7 +81,7 @@
         var different_greetings = ["Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Namaste"];
         var text = document.getElementById("top");
         var greet = document.createElement("h1");
-        greet.innerHTML = "<h1 style='height: 5px; color: rgb(" + getRandomInt(255) + "," + getRandomInt(255) + "," + getRandomInt(255) + ")'> " + different_greetings[getRandomInt(14)] + "<em>, I am Louis </em></h1>";
+        greet.innerHTML = "<h1 style='height: 10px; color: rgb(" + getRandomInt(255) + "," + getRandomInt(255) + "," + getRandomInt(255) + ")'><b> " + different_greetings[getRandomInt(14)] + "</b></h1><h1 style='height: 5px;'><em>I am <span style='text-decoration: underline;'>Louis</span> </em></h1>";
         (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
 
     </script>
