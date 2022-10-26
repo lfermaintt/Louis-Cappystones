@@ -8,14 +8,14 @@
     <title>Louis Fermaintt | Website</title>
     <meta charset="UTF-8">
 </head>
-<body style="margin: 0% auto; border-color: rgb(224, 224, 224); border-width: 3px;">
+<body style=" margin: 0% auto; border-color: rgb(224, 224, 224); border-width: 3px;">
     <div class="header">
-        <a href="website.html" class="logo">Louis</a>
-        <div class="header-right">
-            <a href="website.html">Contact</a>
+        <a href="website.html" class="logo"><b>HOME</b></a>
+        <div class="header-right" style="padding-right: 20px;">
+            <a href="website.html"><b>Contact</b></a>
         </div>
     </div>
-      <div style="height:75px;"></div>
+      <div style="height:80px;"></div>
     <div id="top">
         <ul>
             <li><a href="#">About Me</a></li>
@@ -23,17 +23,16 @@
             <li><a href="#">Going Forward</a></li>
         </ul>
     </div>
-    <div id="middle" style="text-align: center">
+    <div id="middle" style="text-align: center; border-color:rgb(224, 224, 224); border-width: 10px;">
         <h3 id = "headings">This Website</h3>
         <p id = "text">I built this website from the bottom up using HTML, CSS, and Javascript.</p>
-        <h3 id="headings">About Me</h3>
-        <p id="text">Hi, my name is Louis and I am a student at Tappan Zee High School.</br>In my free time, I like to hang out with my friends, work at Shoprite, and play videogames.
+
         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
         </p>
     </div>
-    <div id="footer">
-        <p>&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
+    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182); height:50px;">
+        <p><br/>&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
     <script>
         function getRandomInt(max) {
@@ -42,7 +41,7 @@
         var different_greetings = ["Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Namaste"];
         var text = document.getElementById("top");
         var greet = document.createElement("h1");
-        greet.innerHTML = "<h1 id='hello' style='height: 30px; color: rgb(" + getRandomInt(150) + "," + getRandomInt(200) + "," + getRandomInt(255) + ")'><b> " + different_greetings[getRandomInt(14)] + "</b></h1><h1 id='rest' style='height: 5px;'><em> My name is <span style='text-decoration: underline;'>Louis</span> </em></h1>";
+        greet.innerHTML = "<h1 id='hello' style='height: 30px; max-width: 1600px; color: rgb(" + getRandomInt(150) + "," + getRandomInt(200) + "," + getRandomInt(255) + ")'><b> " + different_greetings[getRandomInt(14)] + "," + "</b></h1><h1 id='rest' style='height: 5px;'><em> My name is <span style='text-decoration: underline;'>Louis</span> </em></h1>";
         (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
     </script>
 </body>

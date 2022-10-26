@@ -37,11 +37,7 @@ h1 {
 }
 #footer {
     text-align: center;
-} header {
-    font-family: 'Cabin', sans-serif;
-    font-size: 40px;
-    margin: 0% auto;
-} #middle {
+}  #middle {
     border-left: rgb(224, 224, 224);
     border-right: rgb(224, 224, 224);
     font-size: 20px;
@@ -62,14 +58,14 @@ h1 {
     animation: fadeInRight 1.8s ease-in-out;
 }
 #rest {
-    animation: fadeInLeft 2.2s ease-in-out;
+    animation: fadeInLeft 2s ease-in-out;
 }
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
     position: fixed;
-    width: 1883px    
+    width: 1910px    
   }
   
   .header a {
@@ -81,11 +77,6 @@ h1 {
     font-size: 18px; 
     line-height: 20px;
     border-radius: 4px;
-  }
-  
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
   }
   
   .header a:hover {
@@ -102,6 +93,15 @@ h1 {
       right: 0;
       position: absolute;
   }
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
   
 @keyframes fadeInLeft {
     from {
