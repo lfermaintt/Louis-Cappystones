@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html style=" margin: 0% auto; padding-bottom: 0%;">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -22,26 +23,30 @@
       --->
     <div id="top">
         <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Going Forward</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="goingforward.html">Going Forward</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
     <div id="middle" style="text-align: center; border-color:rgb(224, 224, 224); border-width: 10px;">
-        <h3 id = "headings"></br></br><b>This Website</b></h3>
-        <p id = "text" style="font-size: 26px;"></br></br></br></br></br></br></br>Currently, I am actively working on and editing this website.</br> I am building this website using HTML, CSS, and Javascript.</br>
+        <h3 id = "headings"><b>This Website</b></h3>
+        <p id = "text" style="font-size: 40px;"></br>Currently, I am actively working on and editing this website.</br> I am building this website using HTML, CSS, and Javascript.</br>
     </div>
-    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182); height:50px;">
-        <p><br/></br></br></br></br></br></br></br></br>&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
+    </br></br></br></br></br></br></br></br>
+    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182);">
+    </br>
+        <p style="height: 50px; margin: 0% auto;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
     <script>
         function getRandomInt(max) {
             return Math.floor(Math.random() * max);
         }
-        var different_greetings = ["Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Namaste"];
+        var different_greetings = ["Zdravo","Shalom","Hallå","Xin chào","Salve","Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Olá","Namaste"];
         var text = document.getElementById("top");
         var greet = document.createElement("h1");
-        greet.innerHTML = "<h1 id='hello' style='height: 30px; max-width: 1600px; color: rgb(" + getRandomInt(150) + "," + getRandomInt(200) + "," + getRandomInt(255) + ")'><b> " + different_greetings[getRandomInt(14)] + "," + "</b></h1><h1 id='rest' style='height: 5px;'><em> My name is <span style='text-decoration: underline;'>Louis</span> </em></h1>";
+        greet.innerHTML = "<h1 id='hello' style='height: 30px; max-width: 1600px; color: rgb(" + getRandomInt(150) + "," + getRandomInt(200) + "," + getRandomInt(255) + ")'><b> " + different_greetings[getRandomInt(20)] + "," + "</b></h1><h1 id='rest' style='height: 5px;'><em> My name is <span style='text-decoration: underline;'>Louis</span> </em></h1>";
         (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
     </script>
 </body>
+</html>

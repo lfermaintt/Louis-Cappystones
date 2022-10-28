@@ -49,7 +49,7 @@ h1 {
 }
 #headings {
     font-family: 'Poppins', sans-serif;
-    font-size: 60px;
+    font-size: 80px;
     color:rgba(29, 43, 41, 0.795);
     height: 40px;
 }
@@ -99,7 +99,7 @@ h1 {
   body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
+    overflow: hidden; 
     }
 
     body::-webkit-scrollbar {
