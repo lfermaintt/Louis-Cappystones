@@ -11,10 +11,31 @@
         <h1 style="margin: 0% auto; text-align: center; font-size: 50px;">About Me</h1>
     </div>
     <div id="middle">
-        <p style="font-size: 20px; font-family: 'Poppins', sans-serif;">I am currently a junior at Tappan Zee High School. Your did it!</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> <span style="font-size: 50px">Im did it!</span></p>
+        <p style="font-size: 20px; font-family: 'Poppins', sans-serif; text-align: center;">
+            I am currently a junior at Tappan Zee High School.</br>
+            My hobbies include playing videogames, hanging out with my friends,</br>
+            playing tennis/volleyball, and programming.</br></br>
+            I started my journey to programming </br></br></br></br></br></br></br></br></br></br></br></br></br>
+            <div class="star-wrapper"><img class="star" src="https://static.wikia.nocookie.net/c3b08815-c15d-49db-8b47-4d3890fd7c61/scale-to-width/755"></div></p>
+    </div>
+    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182);">
+    </br>
+        <p style="height: 50px; margin: 0% auto; text-align: center;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
     <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const image = entry.target.querySelector('.star');
 
+                if (entry.isIntersecting) {
+                    image.classList.add('star-animation');
+	             return;
+                }
+            square.classList.remove('star-animation');
+            });
+        });
+
+        observer.observe(document.querySelector('.star-wrapper'));
     </script>
 </body>
 </html>
